@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SmartPay+ Budget Assistant</title>
+  <!-- Correct path -->
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/chart.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>SmartPay+ Budget Assistant</h1>
+
+    <section class="budgets">
+      <h2>Set Your Budgets</h2>
+      <div class="budget-inputs">
+        <div><label>Electronics:</label><input id="b-electronics" type="number" value="10000"/></div>
+        <div><label>Groceries:</label><input id="b-groceries" type="number" value="7000"/></div>
+        <div><label>Fashion:</label><input id="b-fashion" type="number" value="4000"/></div>
+        <div><label>Other:</label><input id="b-other" type="number" value="3000"/></div>
+      </div>
+    </section>
+
+    <section class="cart">
+      <h2>Your Cart</h2>
+      <div class="cart-inputs">
+        <div><label>Electronics:</label><input id="c-electronics" type="number" value="12000"/></div>
+        <div><label>Groceries:</label><input id="c-groceries" type="number" value="3000"/></div>
+        <div><label>Fashion:</label><input id="c-fashion" type="number" value="1500"/></div>
+        <div><label>Other:</label><input id="c-other" type="number" value="500"/></div>
+      </div>
+      <button id="checkBtn">Check Budget</button>
+    </section>
+
+    <section id="results">
+      <div id="alerts"></div>
+      <div id="cardAd" class="card-ad" style="display:none;"></div>
+      <canvas id="chart" style="max-width:600px; margin-top:2rem;"></canvas>
+    </section>
+  </div>
+
+  <!-- Correct path -->
+  <script src="/static/script.js"></script>
+</body>
+</html>
